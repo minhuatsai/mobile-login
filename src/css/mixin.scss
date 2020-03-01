@@ -1,0 +1,9 @@
+@mixin colorRGBA($type,$color, $opacity:1) {
+    @if $type==color{
+      color: rgba($color, $opacity);
+    }
+    @if $type==border{
+      border-color: rgba($color, $opacity);
+    }
+
+}

@@ -1,0 +1,17 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+
+body {
+  color: $main-color-cyan;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.clearFix {
+  &::before {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
